@@ -1,0 +1,167 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+*, *:before, *:after {
+box-sizing:inherit;
+}
+*/
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/*Top Blue Header*/
+.top-header-icons{
+  background-color: #1c3961;
+}
+.top-header-icons ul {
+  /* padding: 1% 0; */
+  line-height: 4rem;
+  display: flex;
+  justify-content:center;
+}
+.top-header-icons ul li ,ul a{
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+.contactInfo{
+  padding-right: 40%;
+  padding-left: 2%;
+
+}
+
+/****************************************************************************************************************/
+
+/*Navbar and Logo*/
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 3rem;
+  padding:1% 10% 0 10%;
+  font-size: 1.5rem;
+}
+.nav-bar img {
+  padding-left: 8%;
+}
+.nav-bar > ul > li:hover {
+cursor: pointer;
+text-shadow: 1px 1px 4px  #1c3961;
+font-size: 1.52rem;
+transition: all 200ms linear;
+}
+
+/****************************************************************************************************************/
+
+/*Carousel section*/
+.hotel-pictures-carousel{
+  position: relative;
+  padding: 2% 1%;
+}
+.hotel-pictures-carousel img{
+  width: 100%;
+  
+}
+.banner ,.arrows-carousel{
+  position: absolute;
+  color: #fff;
+  font-size: 1.5rem;
+  top: 45%;
+  text-align: center;
+  display: block;
+  width: 98%;
+}
+
+.arrowbtn{
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: bold;
+  color:#fff;
+  padding: 0 1%;
+}
+.arrowbtn > span {
+  width: 5%;
+  border-radius: 3px;
+}
+.carouselPrev:hover, 
+.carouselNext:hover {
+background-color:rgba(0,0,0,0.5);
+box-shadow: -2px 2px 4px rgb(39, 39, 39);
+}
+
+/****************************************************************************************************************/
+
+/*Introduce Landlord section*/
+
+.introduce{
+  background-color:#e9ecec ;
+  margin: 1%;
+  padding-bottom: 4%;
+}
+.introduce h4{
+  color: #0f1e33;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.aboutLandlord > p {
+  padding-top: 1.6rem;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.mypic-name{
+  float: left;
+  width: 20%;
+  padding-left: 2%;
+}
+.mypic-name >p{
+  padding-left: 25px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+
+/****************************************************************************************************************/
+
+/*ROOMS CAROUSEL SLIDER*/
+
+.rooms-carousel {
+  padding: 5% 1%;
+  
+}
+.rooms-container{
+  display: flex;
+  gap: 2rem;
+  width: 2400px;
+  border: 2px solid green;
+  padding: 0 4%;
+}
+.roomNum img{
+  width: 100%;
+}
+.roomNum{
+  border: 2px solid red;
+}
