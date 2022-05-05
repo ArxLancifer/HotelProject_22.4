@@ -9,91 +9,277 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://kit.fontawesome.com/05bc888b6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="main.js" defer></script>
     <title>Hotel-Template</title>
 </head>
 
 <body>
+
     <header>
         <div class="top-header-icons">
             <ul>
-                <li class="mailInfo"><a href="">email@something.com</a></li>
-                <li class="contactInfo"><a href="">Contact icons</a></li>
-                <li class="mediaInfo"><a href="">Social media icons</a></li>
+                <li class="mailInfo"><a href=""><i class="fa-solid fa-envelope"></i> email@something.com</a></li>
+                <li class="contactInfo"><a href="tel:+30699999999"><i class="fa-solid fa-phone"></i> Contact
+                        icons</a>
+                </li>
+                <li class="mediaInfo">
+                    <span><a href=""><i class="fa-brands fa-facebook"> </i></a></span>
+                    <span><a href=""><i class="fa-brands fa-instagram"> </i></a></span>
+                    <span><a href=""><i class="fa-brands fa-twitter"> </i></a></span>
+
+                </li>
             </ul>
         </div>
         <nav class="nav-bar">
             <img src="LOGO.png" alt="">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Room</li>
-                <li>Gallery</li>
-                <li>Contact</li>
+                <li><a href="">Home</a></li>
+                <li><a href="#introduce-scroll">About</a></li>
+                <li><a href="#rooms-scroll">Room</a></li>
+                <li><a href="#gallery-scroll">Gallery</a></li>
+                <li><a href="#contact-scroll">Contact</a></li>
             </ul>
         </nav>
         <section class="hotel-pictures-carousel">
             <div class="carousel-container">
                 <img src="page-banner.jpg" alt="">
                 <div class="banner">
-                <h1 itemprop="companyName">Company Name</h1>
-                <h2 >Company location/banner</h2>
-                
+                    <h1 itemprop="companyName">Company Name</h1>
+                    <h2>Company location/banner</h2>
+
                 </div>
-                
+
             </div>
             <div class="arrows-carousel">
                 <div class="arrowbtn">
-                <span class="carouselPrev">&#706;</span>
-                <span class="carouselNext">&#707;</span>
+                    <span class="carouselPrev">&#706;</span>
+                    <span class="carouselNext">&#707;</span>
                 </div>
             </div>
         </section>
     </header>
     <main>
-        <section class="introduce">
+        <section class="introduce" id="introduce-scroll">
             <h4>Introduce myself/company</h4>
             <div class="aboutLandlord  clearfix">
                 <div class="mypic-name">
-                <img src="http://placekitten.com/110/140" alt="">
-                <p>NAME</p>
+                    <img src="http://placekitten.com/110/140" alt="">
+                    <p>NAME</p>
                 </div>
-                <p class="somewords">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eaque laudantium accusantium velit quos neque animi itaque est omnis id odio deserunt repellendus modi ducimus rem culpa reiciendis magni dolorum nam placeat iusto architecto commodi voluptatum! Hic perferendis delectus aperiam?</p>
+                <p class="somewords">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eaque
+                    laudantium accusantium velit quos neque animi itaque est omnis id odio deserunt repellendus modi
+                    ducimus rem culpa reiciendis magni dolorum nam placeat iusto architecto commodi voluptatum! Hic
+                    perferendis delectus aperiam?</p>
             </div>
         </section>
-        <section class="rooms-carousel">
-            <div class="rooms-container">
-                <section class="roomNum">
-                    <img src="http://placekitten.com/470/300" alt="">
-                    <div class="roomInfo">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente commodi ipsum iste rem ad aut maiores molestiae fugiat debitis in.</p>
-                        <span>Peeps:3</span>
+        <section class="rooms-slider" id="rooms-scroll">
+            <div class="swiper mySwiper" id="kati">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <h1>LOGO HERE</h1>
+                            <div class="image i1"></div>
+                            <div class="details">
+                                <h1><em></em></h1>
+                                <h2>Bed numbers</h2>
+                                <p>Size:SQM</p>
+                            </div>
+                            <h1>Price:~$$$</h1>
+                        </div>
                     </div>
-                </section>
-                <section class="roomNum">
-                    <img src="http://placekitten.com/470/300" alt="">
-                    <div class="roomInfo">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente commodi ipsum iste rem ad aut maiores molestiae fugiat debitis in.</p>
-                        <span>Peeps:3</span>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <h1>LOGO HERE</h1>
+                            <div class="image i1"></div>
+                            <div class="details">
+                                <h1><em></em></h1>
+                                <h2>Bed numbers</h2>
+                                <p>Size:SQM</p>
+                            </div>
+                            <h1>Price:~$$$</h1>
+                        </div>
                     </div>
-                </section>
-                <section class="roomNum">
-                    <img src="http://placekitten.com/470/300" alt="">
-                    <div class="roomInfo">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente commodi ipsum iste rem ad aut maiores molestiae fugiat debitis in.</p>
-                        <span>Peeps:3</span>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <h1>LOGO HERE</h1>
+                            <div class="image i1"></div>
+                            <div class="details">
+                                <h1><em></em></h1>
+                                <h2>Bed numbers</h2>
+                                <p>Size:SQM</p>
+                            </div>
+                            <h1>Price:~$$$</h1>
+                        </div>
                     </div>
-                </section>
-                <section class="roomNum">
-                    <img src="http://placekitten.com/470/300" alt="">
-                    <div class="roomInfo">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente commodi ipsum iste rem ad aut maiores molestiae fugiat debitis in.</p>
-                        <span>Peeps:3</span>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <h1>LOGO HERE</h1>
+                            <div class="image i1"></div>
+                            <div class="details">
+                                <h1><em></em></h1>
+                                <h2>Bed numbers</h2>
+                                <p>Size:SQM</p>
+                            </div>
+                            <h1>Price:~$$$</h1>
+                        </div>
                     </div>
-                </section>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <h1>LOGO HERE</h1>
+                            <div class="image i1"></div>
+                            <div class="details">
+                                <h1><em></em></h1>
+                                <h2>Bed numbers</h2>
+                                <p>Size:SQM</p>
+                            </div>
+                            <h1>Price:~$$$</h1>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="wrapper">
+                            <h1>LOGO HERE</h1>
+                            <div class="image i1"></div>
+                            <div class="details">
+                                <h1><em></em></h1>
+                                <h2>Bed numbers</h2>
+                                <p>Size:SQM</p>
+                            </div>
+                            <h1>Price:~$$$</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
+
     </main>
+    <!-- <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="roomNum">
+                        <img src="http://placekitten.com/470/300" alt="">
+                        <div class="roomInfo">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente commodi ipsum iste rem
+                                ad
+                                aut maiores molestiae fugiat debitis in.</p>
+                            <span>Peeps:3</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
+                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
+                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
+                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
+                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
+                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
+                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
+                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section> -->
+    <section class="room-services">
+        <div class="services-container">
+            <ul>
+                <li><i class="fas fa-book"></i> Room service</li>
+                <li><i class="fas fa-chair"></i> Private balcony</li>
+                <li><i class="fas fa-parking"></i></i> Parking Space</li>
+                <li><i class="fas fa-wifi"></i></i> Free Wi-Fi connection</li>
+                <li> <i class="fas fa-baby"></i> Baby Beds</li>
+                <li> <i class="fas fa-utensils"></i> Kitchenette</li>
+                <li> <i class="fas fa-tv"></i> AC - TV</li>
+            </ul>
+            <p class="services-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam a ratione voluptas voluptate non
+                nostrum minus ipsum, exercitationem nobis ullam, corrupti rerum! Natus eligendi modi ipsam reiciendis
+                asperiores dolorum, qui veniam quae eum iure, molestiae ullam. Quis accusamus minus nam delectus
+                obcaecati aspernatur itaque aliquam nesciunt ex nemo vitae amet sequi expedita dignissimos commodi neque
+                nihil sunt, quam deleniti. Rerum sint id ea, ipsam autem laborum suscipit sit animi? Facere, possimus
+                sapiente eaque mollitia soluta nulla impedit asperiores iusto provident?
+            </p>
+        </div>
+    </section>
+    <section class="places-to-visit" id="gallery-scroll">
+        <h4>Places to visit/activities/text</h4>
+        <div class="gallery-container">
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/400/400" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/500/400" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/440/400" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/400/420" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/480/400" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/490/410" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/400/400" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/800/400" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/540/700" alt="">
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="http://placekitten.com/400/400" alt="">
+            </div>
+
+        </div>
+    </section>
+    <section class="suggested-places">
+
+    </section>
+    <section class="map-position">
+        <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=thalassia%20xanthis&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </section>
+    <section class="contact-form" id="contact-scroll">
+        <h2>Contact me</h2>
+
+        <div class="form-wrap">
+            <input type="text" name="name" id="" placeholder="Name:">
+
+
+
+            <input type="email" name="email" id="" placeholder="Email:">
+
+
+
+            <input type="tel" name="phone-number" id="" placeholder="Phone Number:">
+
+
+            <input type="text" name="subject" id="" placeholder="Subject:" maxlength="40">
+        </div>
+        <div class="textMSG">
+            <textarea placeholder="Message:" maxlength="200"></textarea>
+        </div>
+        <div class="form-btn">
+            <button type="submit">SEND</button>
+            <button class="clear-form">CLEAR</button>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
