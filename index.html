@@ -23,8 +23,9 @@
         <div class="top-header-icons">
             <ul>
                 <li class="mailInfo"><a href=""><i class="fa-solid fa-envelope"></i> email@something.com</a></li>
-                <li class="contactInfo"><a href="tel:+30699999999"><i class="fa-solid fa-phone"></i> Contact
-                        icons</a>
+                <li class="contactInfo"><a href="tel:+30699999999" class="phoneNum"><i class="fa-solid fa-phone"></i>
+                        Contact
+                        icons</a><span class="revealNum"> &#8658; +30699999999</span>
                 </li>
                 <li class="mediaInfo">
                     <span><a href=""><i class="fa-brands fa-facebook"> </i></a></span>
@@ -44,7 +45,36 @@
                 <li><a href="#contact-scroll">Contact</a></li>
             </ul>
         </nav>
-        <section class="hotel-pictures-carousel">
+        <div class="swiper mySwiperCarousel">
+            <div class="bannerSwiper">
+                <h1 itemprop="companyName">Company Name</h1>
+                <h2>Company location/banner</h2>
+            </div>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img
+                        src="https://cdn.thecoolist.com/wp-content/uploads/2021/04/Zakynthos-Navagio-bay-Greek-island.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://www.edreams.com/blog/wp-content/uploads/sites/3/2017/03/Seoul-Spring.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://www.desktopbackground.org/download/1366x768/2015/09/20/1014250_beautiful-places-wallpapers-all-wallpapers-new_1600x1200_h.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="http://www.bestbackgroundwallpaper.com/wp-content/uploads/2020/09/beautiful-places-to-visit-in-europe-ultra-hd-wallpaper-for-4k-uhd-widescreen-desktop-tablet-smartphone-5f6f5957b06c7.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://i.pinimg.com/originals/6c/db/4b/6cdb4bfe644c483c97ba978b979c6a14.jpg" alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://www.desktopbackground.org/download/o/2014/03/04/726228_pathway-wallpapers-most-beautiful-places-in-the-world-download_1600x900_h.jpg"
+                        alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- <section class="hotel-pictures-carousel">
             <div class="carousel-container">
                 <img src="page-banner.jpg" alt="">
                 <div class="banner">
@@ -60,7 +90,7 @@
                     <span class="carouselNext">&#707;</span>
                 </div>
             </div>
-        </section>
+        </section> -->
     </header>
     <main>
         <section class="introduce" id="introduce-scroll">
@@ -159,34 +189,7 @@
         </section>
 
     </main>
-    <!-- <section>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <section class="roomNum">
-                        <img src="http://placekitten.com/470/300" alt="">
-                        <div class="roomInfo">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente commodi ipsum iste rem
-                                ad
-                                aut maiores molestiae fugiat debitis in.</p>
-                            <span>Peeps:3</span>
-                        </div>
-                    </section>
-                </div>
-                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
-                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
-                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
-                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
-                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
-                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
-                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
-                <div class="swiper-slide"><img src="http://placekitten.com/470/300" alt=""></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section> -->
+
     <section class="room-services">
         <div class="services-container">
             <ul>
@@ -278,7 +281,34 @@
             <button class="clear-form">CLEAR</button>
         </div>
     </section>
+    <footer>
+        <div>
+            <img src="aLogo2.png" alt="">
+        </div>
+        <div class="sometext">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium maxime nemo ipsa similique et
+                inventore mollitia ut magni nesciunt! Incidunt!</p>
+            <div>
+                <span><a href=""><i class="fa-brands fa-facebook"> </i></a></span>
+                <span><a href=""><i class="fa-brands fa-instagram"> </i></a></span>
+                <span><a href=""><i class="fa-brands fa-twitter"> </i></a></span>
+            </div>
+        </div>
+        <div class="rooms">
+            <h3>Rooms</h3>
+            <p>Booking</p>
+            <p>HotelBeds</p>
+            <p>WebHotelier</p>
+            <p>Air BnB</p>
+        </div>
+        <div class="someinfo">
+            <h3>Contact us</h3>
+            <p>email : something@email.com</p>
+            <p>Call us : +30699900000</p>
+        </div>
 
+
+    </footer>
 
 </body>
 

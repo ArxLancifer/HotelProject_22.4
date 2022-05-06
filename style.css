@@ -56,7 +56,10 @@ header{
   padding-left: 2%;
 
 }
-
+.revealNum {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
 /****************************************************************************************************************/
 
 /*Navbar and Logo*/
@@ -65,6 +68,7 @@ header{
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
+  padding-bottom: 2%;
 }
 .nav-bar ul {
   display: flex;
@@ -103,6 +107,18 @@ transition: all 200ms linear;
   text-align: center;
   display: block;
   width: 98%;
+}
+
+.bannerSwiper{
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    width: 22%;
+    left: 35%;
+    top: 14rem;
+    color: rgb(78, 78, 78);
+    text-shadow: 2px 2px 4px lightblue;
+   
 }
 
 .arrowbtn{
@@ -203,6 +219,14 @@ box-shadow: -2px 2px 4px rgb(39, 39, 39);
    text-shadow:4px 1px 3px #021024;
 }
 
+.mySwiperCarousel{
+    position: relative;
+    width: 90%;
+    height: 500px;
+}
+.mySwiperCarousel .swiper-slide img{
+    width: 100%;
+}
 
 
 /************************************************************************************************/
@@ -431,6 +455,30 @@ iframe {
     height: 600px;
    
 
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(1,28,57);
+    color: #fff;
+}
+footer p {
+    padding: 5px 0;
+}
+footer h3 {
+    color: rgba(0,0,0,1);
+    border-bottom: 2px solid;
+    
+    width: 80%;
+}
+footer *:not(img){
+    align-self: center;
+}
+
+.sometext {
+    width: 30%;
 }
 /*MEDIA QUARIES*/
 /*------------------------------------------------------------------------------------------------*/
