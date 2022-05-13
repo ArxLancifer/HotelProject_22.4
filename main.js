@@ -1,9 +1,11 @@
 const phoneNum = document.querySelector(".phoneNum");
 const revealNum = document.querySelector(".revealNum");
+const clearForm = document.querySelector(".clear-form");
 phoneNum.addEventListener("click", (e) => {
   console.log(e.target);
   revealNum.style.opacity = "1";
 });
+
 // <!-- Initialize Swiper -->
 
 var swiper = new Swiper(".mySwiper", {
@@ -57,3 +59,12 @@ var swiper = new Swiper(".mySwiperCarousel", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+window.addEventListener("click", (e) => {
+  e.target.className === "phoneNum" ? null : (revealNum.style.opacity = "0");
+}); //hide phone number if click anywhere else
+clearForm.addEventListener("click", () => {
+  document.querySelectorAll("[data-form_input]").forEach((_input) => {
+    _input.value = "";
+  });
+}); //clear button to clear all form inputs
