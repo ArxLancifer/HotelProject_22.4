@@ -49,6 +49,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiperCarousel", {
   slidesPerView: 1,
   spaceBetween: 30,
+  speed: 800,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -57,6 +58,10 @@ var swiper = new Swiper(".mySwiperCarousel", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
   },
 });
 
