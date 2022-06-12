@@ -5,7 +5,7 @@ phoneNum.addEventListener("click", (e) => {
   console.log(e.target);
   revealNum.style.opacity = "1";
 });
-
+const humBar = document.querySelector('.fa-bars');
 // <!-- Initialize Swiper -->
 
 var swiper = new Swiper(".mySwiper", {
@@ -73,3 +73,8 @@ clearForm.addEventListener("click", () => {
     _input.value = "";
   });
 }); //clear button to clear all form inputs
+
+
+humBar.addEventListener('click',()=>{
+document.querySelector('#vertical-nav').classList.toggle("reveal")
+})

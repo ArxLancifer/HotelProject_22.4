@@ -71,6 +71,7 @@ header{
 }
 .nav-bar ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-between;
   gap: 3rem;
@@ -78,7 +79,7 @@ header{
   font-size: 1.5rem;
 }
 .nav-bar img {
-  padding-left: 8%;
+  padding-right: 10%;
 }
 .nav-bar > ul > li:hover {
 cursor: pointer;
@@ -98,10 +99,10 @@ transition: all 200ms linear;
   width: 100%;
   
 }
-.banner ,.arrows-carousel{
-  position: absolute;
+.bannerSwiper ,.arrows-carousel{
+  position: relative;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   top: 45%;
   text-align: center;
   display: block;
@@ -221,10 +222,11 @@ box-shadow: -2px 2px 4px rgb(39, 39, 39);
 .mySwiperCarousel{
     position: relative;
     width: 90%;
-    height: 500px;
+    max-height:500px;
 }
-.mySwiperCarousel .swiper-slide img{
+.swiper-slide img{
     width: 100%;
+ 
 }
 
 
@@ -481,10 +483,64 @@ footer *:not(img){
 }
 /*MEDIA QUARIES*/
 /*------------------------------------------------------------------------------------------------*/
-  @media screen and (max-width:700px){
-    #kati{
-        width: 100%;
+
+#vertical-nav ul{
+    position: absolute;
+    display:block;
+    border: 2px solid red;
+    top:0%;
+    left: -100%;
+    width: 100%;
+    padding-left: 5%;
+    background-color: #0a254b;
+    z-index: 2;
+    list-style: none;
+    transition: left 200ms ease-in;
+}
+#vertical-nav.reveal ul{
+    left: 0%;
+}
+
+
+@media screen and (min-width:500px){
+    .fa-bars{
+        display: none;
     }
+  }
+
+@media screen and (max-width:950px){
+    .nav-bar> img{
+        transform: scale(0.5);
+    }
+  }
+@media screen and (max-width: 750px){
+    .bannerSwiper{
+       font-size: 00.5rem;
+        
+    }
+}
+  @media screen and (max-width:500px){
+    .nav-bar> ul{
+        display: none;
+    }
+    .nav-bar > img {
+        margin: 0 auto;
+        transform: scale(0.8);
+        
+    }
+    .fa-bars{
+        position: absolute;
+        padding-left: 6%;
+        cursor: pointer;
+        text-shadow: -2px 2px 5px rgb(128, 128, 128);
+        font-size: 1.6rem;
+        z-index: 10;
+    }
+    .bannerSwiper{
+        position: absolute;
+        font-size: 0.5rem;
+        top: 15%;   
+     }
   }
 
   
